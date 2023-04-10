@@ -1,0 +1,622 @@
+html, body, .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+/*********Header************************/
+
+header {
+    position: fixed;
+    background-color: rgb(250, 134, 17);
+    width: 100%;
+    min-height: 12vh;    
+    z-index: 2;
+
+    align-items: center;
+    transition: 0.3s ease-out;
+    backdrop-filter: blur(8px) brightness(1.2);
+    -webkit-backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 10px  rgb(250, 134, 17);
+    /*text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+    color: white;
+
+    mask-image: linear-gradient(rgb(250, 134, 17) 10%, transparent);
+    -webkit-mask-image: linear-gradient(rgb(250, 134, 17) 50%, transparent);
+ 
+    /*mask-image: linear-gradient(rgb(30, 29, 28) 50%, transparent);
+    -webkit-mask-image: linear-gradient(rgb(30, 29, 28) 50%, transparent);*/
+}
+
+#logo {    
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 165px;  
+}
+nav {    
+    margin-top: 5px;
+    margin-left: 20px;
+    display: inline-block;
+}
+nav a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+}
+nav a:hover {
+    color: #fff;
+}
+li {
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+}
+
+
+
+/***************whatsapp y mail****************/
+
+.ws {
+	position: fixed; 
+	right: 1px; /* Establecemos la barra en la izquierda */
+	top: 500px; /* Bajamos la barra 500px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.ws ul {
+		list-style: none;
+}
+
+.ws ul li a {
+		display:inline-block;
+		color:#fff;
+		/*background: #000;*/
+		padding: 35px 35px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+.ws ul li .icon-facebook {background-image: url(./img/mail.png)} 
+.ws ul li .icon-mail2 {background-image: url(./img/wapps.png)}
+    
+
+.ws ul li a:hover {
+		/*background:white; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		transform: scale(1.2);
+  		text-decoration: none;
+ 		/*box-shadow: 0 0px 25px coral;*/
+		/*padding: 21px 22px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+
+}
+/*@media (max-width: 800px) {
+    .ws ul li .icon-mail2 {        
+        padding: 20px 20px;     
+    }
+    .ws li .icon-mail2 {
+       padding: 21px 22px;
+    }
+
+}*/
+
+
+
+/****************Slideshow*******************/
+
+/* carousel fullscreen */
+
+.carousel-fullscreen .carousel-inner .item {
+    height: 90vh; 
+    min-height: 500px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/*************Main content *********************/
+
+#main-content {
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.menu-item {
+    color: rgb(121, 69, 2);
+    font-family: 'Charm', cursive;
+    text-transform: uppercase;
+}
+.menu-description {
+    color: gray;
+}
+.menu-group {
+    color: lightseagreen;
+    letter-spacing: 0.33em;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.col-md-4 {
+    margin-bottom: 35px;
+}
+.devider {
+    width: 30%;
+    height: 90px;
+    margin-left: 35%;
+    overflow: hidden;
+}
+.devider:last-child{
+    margin-bottom: 100px;
+}
+.img-dev {
+    width: 100%;
+    /*margin-top: -33%;*/
+}
+@media (max-width: 600px) {
+    .menu-group {
+        width: 80% !important;
+        height:auto;
+        text-align: left;
+        font-size: 2em;
+    }
+}
+@media (max-width: 350px) {
+    .menu-group {
+        width: 60% !important;
+        height:auto;
+        text-align: left;
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 960px) {
+    .devider {
+        width: 50%;
+        height: 100px;
+    }
+}
+@media (max-width: 600px) {
+    .devider {
+        width: 70%;
+        height: 60px;
+        margin-left: 2px;
+    }
+}
+@media (max-width: 430px) {
+    .devider {
+        width: 80%;
+        height: 45px;
+        margin-left: 1px;
+    }
+}
+@media (max-width: 600px) {
+    .menu-item {
+        font-size: 135%
+    }
+}
+
+/************************** cards   **********************/
+
+
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);    
+} 
+  
+  
+.page-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    /*max-width: 1024px;*/
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+}
+@media (min-width: 600px) {
+    .page-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 800px) {
+    .page-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    
+    text-align: center;
+    color: white;
+    /*color:rgba(108, 252, 5, 0.8);*/
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  }
+  @media (min-width: 600px) {
+    .card {
+      height: 280px;
+    }
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+  .card:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+  .card:nth-child(1):before {
+    background-image: url(./img/apart.png);
+  }
+  .card:nth-child(2):before {
+    background-image: url(./img/mono.png);   
+  }
+  .card:nth-child(3):before {
+    background-image: url(./img/habitacion.png);   
+  }
+  
+  
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+  }
+  .content > * + * {
+    margin-top: 1rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: 'Charm', cursive;
+  }
+  
+  .copy {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+  }
+  
+  .btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: lightseagreen;
+    border: none;
+  }
+  .btn:hover {
+    background-color:rgb(250, 134, 17);
+  }
+  .btn:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+  }
+  
+  @media (hover: hover) and (min-width: 600px) {
+    .card:after {
+      transform: translateY(0);
+    }
+  
+    .content {
+      transform: translateY(calc(100% - 4.5rem));
+    }
+    .content > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+  
+    .card:hover,
+  .card:focus-within {
+      align-items: center;
+    }
+    .card:hover:before,
+  .card:focus-within:before {
+      transform: translateY(-4%);
+    }
+    .card:hover:after,
+  .card:focus-within:after {
+      transform: translateY(-50%);
+    }
+    .card:hover .content,
+  .card:focus-within .content {
+      transform: translateY(0);
+    }
+    .card:hover .content > *:not(.title),
+  .card:focus-within .content > *:not(.title) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: calc(var(--d) / 8);
+    }
+  
+    .card:focus-within:before, .card:focus-within:after,
+  .card:focus-within .content,
+  .card:focus-within .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+  }
+
+/*************mapa*******************/
+
+.google-maps {
+    position: relative;
+    padding-bottom: 29%; 
+    height: 0;
+    overflow: hidden;
+}
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height:100% !important;
+}
+
+
+
+
+/************ seccion galeria de fotos**********/
+
+div.galeria {
+    font-family: 'Staatliches', cursive;
+
+    border: 1px solid #ccc;
+        }
+    div.galeria:hover {
+    border: 1px solid #777;
+        }
+    div.galeria img {
+    width: 100%;
+        height: auto;
+        }
+        div.desc {
+        padding: 15px;
+        text-align: center;
+        }
+
+/** {
+    box-sizing: border-box;
+}*/
+
+.responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+        }
+        @media only screen and (max-width: 700px) {
+        .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+        }
+        }
+        @media only screen and (max-width: 500px) {
+        .responsive {
+        width: 100%;
+        }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* 	ConheĆ§a o hotel  seccion servicios **************/
+
+.conheca-o-hotel {
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    min-height: 100vh;
+  }
+  .conheca-o-hotel:hover > hr {
+    width: 330px;
+  }
+  .conheca-o-hotel hr {
+    width: 200px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+    border: none;
+  }
+  .conheca-o-hotel h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1px;
+    margin-top: 75px;
+    color:lightseagreen;
+  }
+  .conheca-o-hotel p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    width: 80%;
+  }
+  .conheca-o-hotel .grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .conheca-o-hotel .grid img {
+    height: 350px;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.25s;
+  }
+  .conheca-o-hotel .grid img:hover {
+    padding: 1px;
+  }
+  .conheca-o-hotel .grid .large {
+    flex-basis: 60%;
+  }
+  .conheca-o-hotel .grid .small {
+    flex-basis: 40%;
+  }
+  @media (max-width: 700px) {
+    .conheca-o-hotel .grid {
+      flex-direction: column;
+    }
+    .conheca-o-hotel .grid img {
+      width: 100%;
+    }
+    .conheca-o-hotel .grid .large {
+      flex-basis: 100%;
+    }
+    .conheca-o-hotel .grid .small {
+      flex-basis: 100%;
+    }
+    .conheca-o-hotel h3 {
+      font-size: 2rem;
+      margin-top: 100px;
+    }
+    .conheca-o-hotel p {
+      font-size: 1.2rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/******Footer********/
+
+footer {
+    background-color: rgb(250, 134, 17);
+    /*padding: 12px 110px;*/
+}
+#logo-footer {
+    /*width: 12%;
+    height: auto;*/
+   /*margin: 1px 700px 1px 700px;*/
+   /*margin-top: 1px;*/
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#contact p {
+    color: white;
+    width: 100%;    
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+#bottom, .social{
+    width: 100%;
+    text-align: center;
+}
+.social a{
+    color: lightseagreen;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.social a:first-child{
+    margin-left:0;
+}
+.social a:hover {
+    color: rgb(0, 255, 242);
+}
+.social {
+    margin-top: 10px;
+}
+#bottom p, #bottom a {
+    color: white;
+    opacity: 0.9;
+}
+#bottom a:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .social a {
+        display: inline;
+        margin-left: 3px;       
+    }
+}
+
+
+@media (max-width: 800px) {
+    header {
+        max-height: 8vh;    
+    }
+}
+@media (max-width: 800px) {
+    /*#logo {    
+        display: inline-block;
+        margin-top: 1505px;
+        margin-left: 5px;        
+    }*/
+    nav {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 435px) {
+    nav li {    
+        display: inline;    
+        margin-top: 1px;    
+        font-size: 71%;         
+    }
+    header {
+        min-height: 6vh;    
+    }
+}
+
