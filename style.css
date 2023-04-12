@@ -26,7 +26,7 @@ header {
     background-color: rgb(250, 134, 17);
     width: 100%;
     min-height: 12vh;    
-    z-index: 2;
+    z-index: 2000;
 
     align-items: center;
     transition: 0.3s ease-out;
@@ -159,3 +159,14 @@ div.galeria {
         display: table;
         clear: both;
         }
+
+@media (max-width: 435px) {
+        nav li {    
+            display: inline;    
+            margin-top: 1px;    
+            font-size: 95%;         
+    }
+        header {
+            min-height: 8vh;    
+    }
+}
