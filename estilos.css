@@ -18,16 +18,30 @@ body {
 header {
   font-family: "Barlow Condensed", sans-serif;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(250, 134, 17);  
   width: 100%;
-  height: 80px;
+  min-height: 10vh;  
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   position: fixed;
+
+  align-items: left;
+    transition: 0.3s ease-out;
+    backdrop-filter: blur(8px) brightness(1.2);
+    -webkit-backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 10px  rgb(250, 134, 17);    
+    color: rgb(24, 219, 253);
+
+    mask-image: linear-gradient(rgb(250, 134, 17) 10%, transparent);
+    -webkit-mask-image: linear-gradient(rgb(250, 134, 17) 50%, transparent);
+
 }
-header nav {  
-  margin-right: 50px;
+
+header nav {
+  /*margin-top: 5px;*/
+  margin-left: 20px;  
+  
   display: flex;
   list-style: none;
   flex-direction: row;
@@ -42,42 +56,52 @@ header a img {
   transition: 0.15s;
  
 }
-header a img:hover {
-  filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+header a img:hover {  
   cursor: pointer;  
 }
 header nav li {
-  margin: 10px;
+  /*margin: 5px;*/
+  margin-top: 2px;
+  margin-left: 10px;  
 }
 header nav li a {
   cursor: pointer;
-  color: white;
+  color: black; 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6em;
   text-decoration: none;
-  font-size: 20px;
+  /*font-size: 30px;*/
   transition: 0.15s;  
 }
 header nav li a:hover {
-  color: rgba(255, 255, 255, 0.6);
-  /*border-bottom: 2px solid white;  */
+  /*color: black;*/
+  color: white;
+  border-bottom: 2px solid;
 }
-
 @media (max-width: 700px) {
   header {
     flex-direction: column;
     height: 95px;
   }
   header nav {
-    margin: 0px;   
+    margin-top: 5px;
+    margin-left: 20px;
+    display: inline-block;
+    /*margin: 0px;   
     margin-bottom: 15px;
-    height: 30px;
+    height: 30px;*/
   }
   header nav li {
-    margin: 3px;
+    /*margin: 30px;*/
+    display: inline-block;
+    position: relative;
+    margin-right: 35px;
   }
   header nav li a {
-    font-size: 20px;
+    font-size: 1.3em;
+    
+    /*font-size: 30px;*/
   }
   iframe {
     width: 100%;
@@ -439,8 +463,7 @@ img {
 
 .gallery__selector:hover {
     cursor: pointer;
-}
-        
+}        
 .gallery__selector:checked + .gallery__img {
     opacity: 1;
 }
@@ -454,7 +477,8 @@ img {
 	Roadapé
 */
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(250, 134, 17);
+  /*background-color: rgba(0, 0, 0, 0.8);*/
   height: 50px;
   width: 100%;
   display: flex;
@@ -481,11 +505,14 @@ footer label {
   font-family: "Barlow Condensed", sans-serif;
   color: white;
   font-size: 1rem;
+  text-transform: uppercase;
 }
+
 
 @media (max-width: 700px) {
   footer {
     height: 60px;
+    text-align: center;
   }
   footer .social {
     position: relative;
@@ -498,7 +525,6 @@ footer label {
     width: 75%;
     height: auto;
     padding-left: 0;
-    padding-right: 0;
-    
+    padding-right: 0;    
   }
 }
