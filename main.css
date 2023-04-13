@@ -11,7 +11,7 @@ header {
     position: fixed;
     background-color: rgb(250, 134, 17);
     width: 100%;
-    min-height: 12vh;    
+    min-height: 10vh;    
     z-index: 2;
 
     align-items: center;
