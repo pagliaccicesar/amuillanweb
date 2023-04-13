@@ -1,7 +1,7 @@
-/*$('.carousel').carousel({
+$('.carousel').carousel({
     interval: 4000,
     pause: "false"
-  });*/
+  });
 
 
   $('#myCarousel').carousel({
