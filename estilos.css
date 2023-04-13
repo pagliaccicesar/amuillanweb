@@ -500,14 +500,18 @@ footer .social a i {
 }
 footer .social a i:hover {
   color: rgb(250, 197, 73);
+  
 }
 footer label {
   font-family: "Barlow Condensed", sans-serif;
   color: white;
   font-size: 1rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
-
+a:link, a:visited {
+  text-decoration: none;
+}
 
 @media (max-width: 700px) {
   footer {
