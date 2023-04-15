@@ -1,8 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400&display=swap");
-/** {
-  cursor: default;
-}*/
+
 html {
   height: 100%;
   scroll-behavior: smooth;  
@@ -133,68 +131,6 @@ header nav li a:hover {
   height:auto;  
 }
 
-
-/*
-	Parte principal da home
-*/
-.hero {
-  font-family: "Barlow Condensed", sans-serif;
-  position: relative;
-  /*background: url("https://i.imgur.com/qdBuPgm.jpg");*/
-  background: url(./img/frente.png);
-  background-size: cover;
-  min-height: 100vh;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 4rem;
-  margin-bottom: 1px;
-}
-.hero h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 100;
-  margin-top: 0px;
-  font-size: 2.5rem;
-}
-.hero .btn {
-  font-family: "Barlow Condensed", sans-serif;
-  width: 150px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid rgb(171, 2, 2);
-  font-size: 30px;
-  color: rgb(6, 229, 245);
-  /*color: rgb(171, 2, 2);*/
-  text-transform: uppercase;
-  cursor: pointer;
-  outline: none;
-  transition: 0.25s;
-}
-.hero .btn:hover {
-  background-color: rgb(171, 2, 2);
-  color: white;
-}
-@media (max-width: 700px) {
-  .hero {
-    background-size: 250vw 100vh;
-    background-position-x: left;
-    background-repeat: no-repeat;
-  }
-  .hero h1 {
-    font-size: 1.7rem;
-  }
-  .hero h3 {
-    font-size: 1.2rem;
-  }
-}
-/*
-	ConheĆ§a o hotel
-*/
 .conheca-o-hotel {
   font-family: "Barlow Condensed", sans-serif;
   display: flex;
@@ -364,6 +300,10 @@ header nav li a:hover {
   color: white;
 }
 @media (max-width: 700px) {
+  .caracteristicas {
+    min-height: 50vh;
+  }
+
   .caracteristicas .grid {
     flex-direction: column;
   }
@@ -381,9 +321,9 @@ header nav li a:hover {
     font-size: 1.2rem;
   }
 }
-/*
-	NewsLetter
-*/
+
+/*	NewsLetter */
+
 .newsletter {
   font-family: "Barlow Condensed", sans-serif;
   display: flex;
@@ -415,9 +355,6 @@ header nav li a:hover {
   width: 80%;
 }
 
-
-
-
 @media (max-width: 700px) {
   .newsletter h3 {
     font-size: 2rem;
@@ -425,10 +362,8 @@ header nav li a:hover {
   }
   .newsletter p {
     font-size: 1.2rem;
-  }
-  
+  }  
 }
-
 
 .container {
     /*padding: .5rem;*/
@@ -487,12 +422,10 @@ img {
 }
 
 
-/*
-	Roadapé
-*/
+/* FOOTER */
+
 footer {
-  background-color: rgb(250, 134, 17);
-  /*background-color: rgba(0, 0, 0, 0.8);*/
+  background-color: rgb(250, 134, 17); 
   height: 50px;
   width: 100%;
   display: flex;
