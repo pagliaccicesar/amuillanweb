@@ -44,9 +44,7 @@ nav {
 nav a {
     width: 100%;
     height: 100%;
-    color: rgb(113, 1, 63);
-    /*color : black;*/
-    /*color: #fff;*/
+    color: rgb(113, 1, 63);    
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -136,7 +134,8 @@ li {
     text-transform: uppercase;
 }
 .menu-description {
-    color: gray;
+     color: rgb(113, 1, 63);
+    /*color: gray;*/
 }
 .menu-group {
     color: lightseagreen;
@@ -445,99 +444,6 @@ div.galeria {
     display: table;
     clear: both;
 }
-
-
-
-/* 	ConheĆ§a o hotel  seccion servicios **************/
-
-/*.conheca-o-hotel {
-    font-family: "Barlow Condensed", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    min-height: 100vh;
-  }
-  .conheca-o-hotel:hover > hr {
-    width: 330px;
-  }
-  .conheca-o-hotel hr {
-    width: 200px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: 0.5s;
-    border: none;
-  }
-  .conheca-o-hotel h3 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1px;
-    margin-top: 75px;
-    color:lightseagreen;
-  }
-  .conheca-o-hotel p {
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 300;
-    width: 80%;
-  }
-  .conheca-o-hotel .grid {
-    display: flex;
-    flex-wrap: wrap;
-    height: 60%;
-    width: 90%;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-  .conheca-o-hotel .grid img {
-    height: 350px;
-    width: 20%;
-    box-sizing: border-box;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 0.25s;
-  }
-  .conheca-o-hotel .grid img:hover {
-    padding: 1px;
-  }
-  .conheca-o-hotel .grid .large {
-    flex-basis: 60%;
-  }
-  .conheca-o-hotel .grid .small {
-    flex-basis: 40%;
-  }
-  @media (max-width: 700px) {
-    .conheca-o-hotel .grid {
-      flex-direction: column;
-    }
-    .conheca-o-hotel .grid img {
-      width: 100%;
-    }
-    .conheca-o-hotel .grid .large {
-      flex-basis: 100%;
-    }
-    .conheca-o-hotel .grid .small {
-      flex-basis: 100%;
-    }
-    .conheca-o-hotel h3 {
-      font-size: 2rem;
-      margin-top: 100px;
-    }
-    .conheca-o-hotel p {
-      font-size: 1.2rem;
-    }
-  }*/
-
-
-
-
-
-
-
-
 
 
 /******Footer********/
