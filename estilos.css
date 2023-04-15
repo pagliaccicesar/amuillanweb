@@ -56,6 +56,7 @@ header a img {
   height: auto;
   width: auto;
   transition: 0.15s;
+  text-decoration: none!important;
  
 }
 header a img:hover {  
@@ -69,10 +70,11 @@ header nav li {
 }
 header nav li a {
   cursor: pointer;
-  color: black; 
+  color: rgb(113, 1, 63);
+  /*color: black; */
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-decoration: none;
   /*font-size: 30px;*/
   transition: 0.15s;
@@ -81,15 +83,19 @@ header nav li a {
 header nav li a:hover {
   /*color: black;*/
   color: white;
-  border-bottom: 2px solid;  
+  border-bottom: 2px solid;
+  
   
 }
 
 
 @media (min-width: 700px) {
     header nav li a {      
-      padding-right: 20px;
-    }
+      padding-right: 20px;}
+      header a:link, a:visited {
+        text-decoration: none;
+      }
+    
 }
 
 
@@ -112,12 +118,15 @@ header nav li a:hover {
   header nav li a {
     font-size: 1.3em;
     padding-right: 10px;   
-    
+    text-decoration: none;
     /*font-size: 30px;*/
   }
   iframe {
     width: 100%;
     height: auto;
+  }
+  header a:link, a:visited {
+    text-decoration: none;
   }
 }
 
