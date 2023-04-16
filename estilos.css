@@ -3,7 +3,8 @@
 
 html {
   height: 100%;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
@@ -69,8 +70,7 @@ header nav li a {
 }
 
 header nav li a:hover { 
-  color: white;
-  border-bottom: 2px solid;  
+  color: white;  
 }
 
 header nav li a:hover {
@@ -85,11 +85,8 @@ header nav li a:hover {
 
      a:hover , a:link, a:visited {
         text-decoration: none;
-      }
-    
+      }   
 }
-
-
 @media (max-width: 700px) {
   header {
     flex-direction: column;
@@ -121,6 +118,8 @@ header nav li a:hover {
   }
 }
 
+/****   REDES   ****/
+
 .www {
   width: 65%;
   height:auto;  
@@ -130,6 +129,52 @@ header nav li a:hover {
   width: 65%;
   height:auto;  
 }
+
+.ws {
+	position: fixed; 
+	right: 1px; /* Establecemos la barra en la izquierda */
+	top: 500px; /* Bajamos la barra 500px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.ws ul {
+		list-style: none;
+}
+
+.ws ul li a {
+		display:inline-block;
+		color:#fff;
+		/*background: #000;*/
+		padding: 35px 35px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+.ws ul li .icon-facebook {background-image: url(./img/mail.png)} 
+.ws ul li .icon-mail2 {background-image: url(./img/wapps.png)}
+    
+
+.ws ul li a:hover {
+		/*background:white; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		transform: scale(1.2);
+  		text-decoration: none;
+ 		/*box-shadow: 0 0px 25px coral;*/
+		/*padding: 21px 22px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+
+}
+/*@media (max-width: 800px) {
+    .ws ul li .icon-mail2 {        
+        padding: 20px 20px;     
+    }
+    .ws li .icon-mail2 {
+       padding: 21px 22px;
+    }
+
+}*/
+
+/******   GALERIA DE FOTS INICIAL   *******/
 
 .conheca-o-hotel {
   font-family: "Barlow Condensed", sans-serif;
@@ -157,9 +202,9 @@ header nav li a:hover {
   color: rgb(24, 219, 253);
 }
 .conheca-o-hotel p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-transform: uppercase;
+  
   text-align: center;
   font-family: "Barlow Condensed", sans-serif;
   width: 80%;
@@ -210,7 +255,7 @@ header nav li a:hover {
     margin-top: 100px;
   }
   .conheca-o-hotel p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 /*
