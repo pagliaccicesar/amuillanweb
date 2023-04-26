@@ -133,7 +133,7 @@ header nav li a:hover {
 .ws {
 	position: fixed; 
 	right: 1px; /* Establecemos la barra en la izquierda */
-	top: 530px; /* Bajamos la barra 530px de arriba a abajo */
+	top: 550px; /* Bajamos la barra 550px de arriba a abajo */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
@@ -153,7 +153,7 @@ header nav li a:hover {
 }
 
 /*.ws ul li .icon-facebook {background-image: url(./img/mail.png)} */
-.ws ul li .icon-mail2 {background-image: url(./img/wapps.png)}
+.ws ul li .icon-mail2 {background-image: url(./img/wwws.png)}
     
 
 .ws ul li a:hover {

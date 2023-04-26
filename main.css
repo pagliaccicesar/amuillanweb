@@ -67,7 +67,7 @@ li {
 
 .ws {
 	position: fixed; 
-	right: 1px; /* Establecemos la barra en la izquierda */
+	right: 0px; /* Establecemos la barra en la izquierda */
 	top: 500px; /* Bajamos la barra 500px de arriba a abajo */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
@@ -88,7 +88,7 @@ li {
 }
 
 /*.ws ul li .icon-facebook {background-image: url(./img/mail.png)} */
-.ws ul li .icon-mail2 {background-image: url(./img/wapps.png)}
+.ws ul li .icon-mail2 {background-image: url(./img/wwws.png)}
     
 
 .ws ul li a:hover {
