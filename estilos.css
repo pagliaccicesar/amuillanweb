@@ -133,7 +133,7 @@ header nav li a:hover {
 .ws {
 	position: fixed; 
 	right: 1px; /* Establecemos la barra en la izquierda */
-	top: 580px; /* Bajamos la barra 580px de arriba a abajo */
+	top: 615px; /* Bajamos la barra 6150px de arriba a abajo */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
