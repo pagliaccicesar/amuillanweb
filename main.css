@@ -109,7 +109,119 @@ li {
 
 }*/
 
-
+body {
+	padding: 0;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+	/* Hide Fallback content first */
+	.fallback {
+	  display: none;
+	}
+  
+	.carousel {
+	  display: block !important;
+	  max-height: none !important;
+	  position: relative;
+	}
+  
+	/* 
+	Selective blocking for clients.
+	- Samsung (#MessageViewBody) - no absolute positioning
+	- Comcast/Zimbra (body.MsgBody) - inconsistent CSS support
+	*/
+	#MessageViewBody .fallback,
+	body.MsgBody .fallback {
+	  display: block;
+	}
+	#MessageViewBody .carousel,
+	body.MsgBody .carousel {
+	  display: none !important;
+	}
+  
+	.carousel a {
+	  width: 100%;
+	  display: block;
+	  overflow: hidden;
+	}
+  
+	.carousel img {
+	  display: block !important;
+	  width: 100% !important;
+	  height: auto !important;
+	}
+  
+	.carousel.responsive {
+	  width: 100% !important;
+	}
+  
+	.carousel.responsive .car-cont {
+	  width: 100% !important;
+	  height: auto !important;
+	}
+  
+	/* SLIDE */
+  
+	.carousel.slide a {
+	  position: absolute;
+	  top: 0px;
+	  left: 0px;
+	  opacity: 1;
+	  width: 100%;
+	  -webkit-animation: slide-anim 9s linear infinite;
+	}
+  
+	.carousel.slide a:nth-child(1) {
+	  position: relative;
+	  -webkit-animation-delay: -10s;
+	}
+	.carousel.slide a:nth-child(2) {
+	  -webkit-animation-delay: -7s;
+	}
+	.carousel.slide a:nth-child(3) {
+	  -webkit-animation-delay: -4s;
+	}
+  
+	/* iOS doesn't like negative delay with translates (transform:translateX(100%);) */
+	/* So we use margin although it is less "smooth" */
+	@-webkit-keyframes slide-anim {
+	  /* start slide in */
+	  0% {
+		margin-left: 100%;
+	  }
+	  /* end slide in */
+	  5% {
+		margin-left: 0%;
+	  }
+	  /* start slide out */
+	  33.3333% {
+		margin-left: 0%;
+	  }
+	  /* end slide out */
+	  38.3333% {
+		margin-left: -100%;
+	  }
+	  100% {
+		margin-left: -100%;
+	  }
+	}
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+	.row-eq {
+	  display: block;
+	}
+  
+	.col-eq {
+	  flex: 1;
+	}
+  }
+  
+  table {
+	z-index: -1 !important;
+  }
 
 /****************Slideshow*******************/
 
