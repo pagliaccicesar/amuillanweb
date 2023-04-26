@@ -87,7 +87,7 @@ li {
 		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
 }
 
-.ws ul li .icon-facebook {background-image: url(./img/mail.png)} 
+/*.ws ul li .icon-facebook {background-image: url(./img/mail.png)} */
 .ws ul li .icon-mail2 {background-image: url(./img/wapps.png)}
     
 
